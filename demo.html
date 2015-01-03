@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            瀑布流
+        </title>
+        <style>
+            * { margin:0; padding: 0; border: 0} 
+            .wrap { width: 960px; margin: 0 auto;
+            } 
+            .fall-container { width: 960px; } 
+            .content { border: 1px solid; padding: 10px; word-wrap: break-word;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="wrap">
+            <div class="fall-container">
+                <div class="fall-item">
+                    <div class="content">
+                    	Breaking two core rules of #scrum   may still get some value, but three strikes and you're out. Management Review Time. #paxcel   #drutas   #agile  
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                        The goal is not to write code faster. It is to produce valuable, working, testing, remediated code faster. Be #Agile    #Paxcel   #Drutas   #Scrum  ﻿
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                       If your top 5 goals for the #scrum   disconnect with your team members' . Take some leadership & communication advice. #paxcel   #drutas   #agile  ﻿
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                    	Semantic UI - a UI component framework based around useful principles from natural language. http://ow.ly/EOkGJ﻿
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                       @滔哥 : 相信各位码农已经发现了： 2015=1024+512+256+128+64+16+8+4+2+1，用二进制写出来就是11111011111，完美对称，吉祥如意的一年。
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                       @asada : 今天去拿体检报告，被通知说身体越来越差了，心脏已经到临界了，现在心里很忐忑啊！不知以后会如何
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                       @小肥侠 : 眼睛快瞎了，看来不能再干IT了。
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                        @开源中国首席段子手 : 办公室是一个如此神奇的地方，你的手机、钱包、车钥匙放在桌上一个星期也不会有人碰一下，但只要你的笔脱离视线一小时，必定下落不明！
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                        @红薯  你只要一高兴就丢东西，比如济南丢了眼镜，昨天丢了衣服，聊天丢了节操。。。
+                    </div>
+                </div>
+                <div class="fall-item">
+                    <div class="content">
+                        @zouqilin：发现高中班上一个从来不说话的女孩子都开始卖面膜了  世界变得太快啊5 还是我走不太慢  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="jquery.js"></script>
+    <script src="fall.js"></script>
+    <script>
+        //四个参数 第一个是最外层的class或者id，第二个是上下间隔 第三个是 左右间隔 最后一个是列数
+        // 需要排列的必须以fall-item 为class fall-item保持独立 不要影响fall-item的布局
+        var mf = new MakeFall('.fall-container', 10, 10, 2);
+
+        //可以设置两个参数 开始的fall-item索引和结束的索引 留空是全部的fall-item
+        mf.setItem()
+    </script>
+
+</html>
